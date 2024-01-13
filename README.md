@@ -8,7 +8,7 @@ This projects aims to demonstrate how secure file sharing works with presigned U
 ## Table of Contents
 
 - [Presigned URL](#presigned-url)
-- [Working of Project](#working-of-project)
+- [Working of Project](#working-of-project-using-example)
 - [Security Advantages of Presigned URLs](#security-advantages-of-presigned-urls)
 - [Contributing](#contributing)
 
