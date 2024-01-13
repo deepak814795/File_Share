@@ -50,6 +50,7 @@ const Home = () => {
         <p className='info'>The file uploads will cancel if you move away from this page before they complete. Uploaded files can be deleted manually at any time and will in any case be deleted automatically 6 days from now.</p>
 
         {file && <img src={url} alt="pics" />}
+
     </div>
   )
 }
