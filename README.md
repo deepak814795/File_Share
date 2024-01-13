@@ -41,6 +41,19 @@ A presigned URL is a time-limited URL that provides secure and temporary access 
 
 **STEP 4:** The user makes an HTTP request (GET) to the received pre-signed URL to download the file directly from S3.
 
+## Types of presigned URLs
+
+### Get URL
+This is probably the most common kind of pre-signed URL that you will see in the wild. As we discussed before, you can use GET pre-signed URLs to allow a user to download a specific object from an S3 bucket without needing them to have valid AWS credentials or to use the AWS SDK. One way to generate this kind of URL is by using the AWS CLI.
+
+### Put URL
+Pre-signed PUT URLs can be used to authenticate uploads to S3. These are called PUT requests because they are built on top of regular HTTP PUT requests.
+
+A typical PUT request using a pre-signed URL would look like this:
+![](https://fourtheorem.com/wp-content/uploads/2023/01/Screenshot-2023-01-13-at-11.06.52.png).
+ In This example, we are sending a PUT request to the S3 server using the pre-signed URL. We are also passing the Content-Length header which specifies the size of the request body (in bytes). The request body contains the raw bytes of the file we are uploading.
+
+
 ## Security Advantages of Presigned URLs
 
 It’s important to appreciate that the server never talks directly to S3. It can generate the pre-signed URLs autonomously by using its own set of AWS credentials (for example the server could be an EC2 instance with an IAM instance profile). 
