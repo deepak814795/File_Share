@@ -1,5 +1,6 @@
 import axios from 'axios';
 const API_URL = 'https://jui-fhh6.onrender.com';
+//const API_URL = 'http://localhost:3000';
 const headers={
     "Content-Type": "multipart/form-data"
 }

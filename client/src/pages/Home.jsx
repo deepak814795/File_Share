@@ -49,6 +49,11 @@ const Home = () => {
 
         <p className='info'>The file uploads will cancel if you move away from this page before they complete. Uploaded files can be deleted manually at any time and will in any case be deleted automatically 6 days from now.</p>
 
+        <p className='info' style={{ color: 'red' }}>
+        <span style={{ fontWeight: 'bold' }}>Note:</span> In case you encounter difficulty obtaining the AWS link, please consider refreshing the page. Sometimes, it may take a few seconds for the link to be successfully fetched from AWS.
+        </p>
+
+
         {file && <img src={url} alt="pics" />}
 
     </div>
